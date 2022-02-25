@@ -24,8 +24,11 @@ public class MainApp {
 
 
          */
-        StoreManager.getInstance().getProductView().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        StoreManager.getInstance().getMainView().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        StoreManager.getInstance().getMainView().setVisible(true); 
 
-        StoreManager.getInstance().getProductView().setVisible(true); // Show the ProductView!
+        //StoreManager.getInstance().getProductView().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //StoreManager.getInstance().getProductView().setVisible(true); // Show the ProductView!
     }
 }
