@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class MainApp {
     public static void main(String[] args) {
-        /* Test Data Access
+        //Test Data Access
         DataAccess dao = StoreManager.getInstance().getDataAccess();
 
         dao.connect();
@@ -21,9 +21,7 @@ public class MainApp {
         prod = dao.loadProduct(100); // Samsung!!!
         if (prod != null)
             System.out.println("Product with ID = " + prod.productID + " name = " + prod.name + " price = " + prod.price + " quantity = " + prod.quantity);
-
-
-         */
+        
         StoreManager.getInstance().getMainView().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         StoreManager.getInstance().getMainView().setVisible(true); 
     }

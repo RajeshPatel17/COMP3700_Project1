@@ -2,7 +2,9 @@ import java.sql.*;
 
 public class SQLiteDataAdapter implements DataAccess {
     Connection conn = null;
-
+    public SQLiteDataAdapter(){
+        connect();
+    }
     @Override
     public void connect() {
         try {

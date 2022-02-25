@@ -1,9 +1,7 @@
 public class StoreManager {
 
     private static StoreManager instance = null;
-
     private SQLiteDataAdapter dao;
-
     
     private MainView mainView = null;
     private OrderView orderView = null;
@@ -21,6 +19,8 @@ public class StoreManager {
             dao = new SQLiteDataAdapter();
 
         dao.connect();
+        instance = this;
+        
         mainView = new MainView();
         mainController = new MainController(mainView);
         orderView = new OrderView();
