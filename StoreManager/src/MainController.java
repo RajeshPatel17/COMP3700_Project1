@@ -16,13 +16,12 @@ public class MainController implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent event) {
         if(event.getSource() == thisMainView.CustButton){
-            //loadCustomerPanel
+            StoreManager.getInstance().getCustomerView().setVisible(true);
         }
         if(event.getSource() == thisMainView.OrdButton){
-            //loadOrderPanel
+            StoreManager.getInstance().getOrderView().setVisible(true);
         }
         if(event.getSource() == thisMainView.ProdButton){
-            StoreManager.getInstance().getProductView().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             StoreManager.getInstance().getProductView().setVisible(true);
         }
     }

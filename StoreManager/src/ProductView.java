@@ -8,8 +8,8 @@ public class ProductView extends JFrame {
     public JTextField txtProductPrice = new JTextField(30);
     public JTextField txtProductQuantity = new JTextField(30);
 
-    public JButton btnLoad = new JButton("Load");
-    public JButton btnSave = new JButton("Save");
+    public JButton btnLoad = new JButton("Retrieve Product");
+    public JButton btnSave = new JButton("Upload Product");
 
     public ProductView() {
 
@@ -41,7 +41,6 @@ public class ProductView extends JFrame {
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(btnLoad);
         buttonPanel.add(btnSave);
-
         this.getContentPane().add(buttonPanel);
 
     }

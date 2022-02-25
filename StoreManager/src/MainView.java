@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
+/* Main view that gets displayed when program is executed.
+ * Allows user to toggle between input menus
+*/
 public class MainView extends JFrame {
 
     public JButton ProdButton = new JButton("Product");
@@ -8,8 +11,9 @@ public class MainView extends JFrame {
     public JButton OrdButton = new JButton("Order");
 
     public MainView(){
+
         this.setTitle("Main View");
-        this.setSize(new Dimension(400,150));
+        this.setSize(new Dimension(400,100));
         this.getContentPane().setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));    // make this window with box layout
 
         JPanel ButtonPanel = new JPanel();
@@ -18,6 +22,5 @@ public class MainView extends JFrame {
         ButtonPanel.add(OrdButton);
 
         this.getContentPane().add(ButtonPanel);
-    
     }
 }

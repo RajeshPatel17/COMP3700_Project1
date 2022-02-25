@@ -44,7 +44,8 @@ public class ProductController implements ActionListener {
         catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(null, "Invalid format for ProductID");
             ex.printStackTrace();
-        }    }
+        }    
+    }
 
     private void loadProductAndDisplay() {
         try {
