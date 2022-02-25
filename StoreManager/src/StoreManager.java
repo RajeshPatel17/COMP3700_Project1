@@ -19,7 +19,6 @@ public class StoreManager {
             dao = new SQLiteDataAdapter();
 
         dao.connect();
-        instance = this;
         
         mainView = new MainView();
         mainController = new MainController(mainView);
