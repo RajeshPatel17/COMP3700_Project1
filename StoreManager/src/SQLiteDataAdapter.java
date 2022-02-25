@@ -2,9 +2,7 @@ import java.sql.*;
 
 public class SQLiteDataAdapter implements DataAccess {
     Connection conn = null;
-    public SQLiteDataAdapter(){
-        connect();
-    }
+
     @Override
     public void connect() {
         try {
@@ -15,11 +13,11 @@ public class SQLiteDataAdapter implements DataAccess {
 
             conn = DriverManager.getConnection(url);
 
-            if (conn == null)
+            if (conn == null) {
                 System.out.println("Cannot make the connection!!!");
-            else
+            } else {
                 System.out.println("The connection object is " + conn);
-
+            }
             System.out.println("Connection to SQLite has been established.");
 
             //Test data!!!
@@ -38,6 +36,7 @@ public class SQLiteDataAdapter implements DataAccess {
     @Override
     public void saveProduct(ProductModel product) {
         try {
+
             Statement stmt = conn.createStatement();
 
             if (loadProduct(product.productID) == null) {           // this is a new product!
