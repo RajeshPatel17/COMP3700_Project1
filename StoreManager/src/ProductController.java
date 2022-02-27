@@ -23,7 +23,6 @@ public class ProductController implements ActionListener {
         if (e.getSource() == myView.btnSave) {      // button Save is clicked
             saveProduct();
         }
-
     }
 
     private void saveProduct() {

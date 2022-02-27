@@ -1,9 +1,7 @@
-import java.sql.Date;
-
 public class OrderModel {
     int orderID;
-    Date orderDate;
+    String orderDate;
     int customerID;
-    float totalCost;
-    float totalTax;
+    double totalCost;
+    double totalTax;
 }

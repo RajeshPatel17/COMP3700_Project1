@@ -26,7 +26,7 @@ public class OrderView extends JFrame{
         this.getContentPane().add(line1);
 
         JPanel line2 = new JPanel();
-        line2.add(new JLabel("Order Date"));
+        line2.add(new JLabel("Order Date (yyyy-mm-dd)"));
         line2.add(orderDateText);
         this.getContentPane().add(line2);
 

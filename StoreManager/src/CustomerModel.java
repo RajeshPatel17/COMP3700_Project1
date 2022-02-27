@@ -1,8 +1,6 @@
-import java.sql.Date;
-
 public class CustomerModel {
-    int customerId;
+    int customerID;
     String customerName;
-    Date dateOfBirth;
+    String dateOfBirth;
     String address;
 }

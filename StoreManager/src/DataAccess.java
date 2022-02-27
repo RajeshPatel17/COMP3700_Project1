@@ -4,4 +4,12 @@ public interface DataAccess {
     void saveProduct(ProductModel product);
 
     ProductModel loadProduct(int productID);
+
+    boolean saveOrder(OrderModel order);
+
+    OrderModel loadOrder(int orderID);
+    
+    boolean saveCustomer(CustomerModel customer);
+
+    CustomerModel loadCustomer(int customerID);
 }
