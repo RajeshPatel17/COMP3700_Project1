@@ -28,7 +28,7 @@ public class CustomerView extends JFrame {
         this.getContentPane().add(line2);
 
         JPanel line3 = new JPanel();
-        line3.add(new JLabel("Date Of Birth (yyyy-mm-dd"));
+        line3.add(new JLabel("Date Of Birth (yyyy-mm-dd)"));
         line3.add(CustomerDOBText);
         this.getContentPane().add(line3);
 
